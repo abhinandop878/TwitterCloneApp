@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from '../api.service';
 
 @Component({
   selector: 'app-register',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegisterComponent implements OnInit {
 
-  constructor() { }
+  constructor(private myapi:ApiService) { }
   name=""
   dob=""
   phoneNo=""
@@ -23,7 +24,9 @@ export class RegisterComponent implements OnInit {
       "emailId":this.emailId,
       "password":this.password
     }
-    
+    this.myapi.addUser(data).subscribe((res)=>{
+      alert("Successfully added !")
+    })
   }
   ngOnInit(): void {
   }
