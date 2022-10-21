@@ -1,0 +1,47 @@
+<h1 style="text-align: center; color:navy">Register</h1>
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">Name:</label>
+                    <input placeholder="Enter your name"type="text" class="form-control" name="name" [(ngModel)]="name">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">Date of Birth:</label>
+                    <input placeholder="Enter your Date of Birth"type="date" name="dob" id=""[(ngModel)]="dob">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">Phone NO:</label>
+                    <input placeholder="Enter your Phone NO"type="tel" name="phoneNo" id="" class="form-control"[(ngModel)]="phoneNo">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">Place:</label>
+                    <input placeholder="Enter your Place"type="text" class="form-control"name="place" [(ngModel)]="place">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">Email ID:</label>
+                   <input placeholder="Enter your email"type="email" name="emailId" id="" class="form-control"[(ngModel)]="emailId">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">Password:</label>
+                    <input placeholder="Enter your Password"type="password" name="password" id="" class="form-control"[(ngModel)]="password">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">Confirm Password:</label>
+                    <input placeholder="Enter your confirm password"type="password" name="" id="" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                        <br>
+                        <button class="btn btn-success" type="button"(click)="readValue()">Register</button>
+                    </div>
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <a routerLinK="/">Back-to-login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
