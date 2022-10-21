@@ -10,7 +10,13 @@ export class LoginComponent implements OnInit {
   constructor() { }
   emailId=""
   password=""
-
+  readLogin=()=>{
+    let data={
+      "emailId":this.emailId,
+      "password":this.password
+    }
+    console.log(data)
+  }
   ngOnInit(): void {
   }
 
